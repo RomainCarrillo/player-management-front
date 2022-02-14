@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'player-manager-front';
+  title = 'Meet my Teem - Player Management';
 }
