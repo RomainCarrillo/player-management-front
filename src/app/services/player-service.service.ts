@@ -8,11 +8,12 @@ import { Observable } from 'rxjs';
 })
 export class PlayerServiceService {
 
+
   private playersUrl: string;
 
 
   constructor(private http: HttpClient) {
-    this.playersUrl = "http://localhost:8080/";
+    this.playersUrl = "http://localhost:8080/players";
    }
 
    public getAllPlayers() :Observable<Player[]> {
