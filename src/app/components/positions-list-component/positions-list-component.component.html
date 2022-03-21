@@ -1,0 +1,25 @@
+<div class="card my-5">
+    <div class="card-body">
+        <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Numéro</th>
+                <th scope="col">Intitulé</th>
+                <th scope="col">Membre du staff ?</th>
+                <th scope="col">Choose a player</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let position of positions">
+                <td><span *ngIf="position.staff === false">{{position.shirt}}</span></td>
+                <td>{{position.name}}</td>
+                <td><span *ngIf="position.staff === true">{{position.staff}}</span></td>
+                <td><input type="text"
+                  placeholder="Pick one"
+                  aria-label="Number">
+                  </td>
+              </tr>
+            </tbody>
+          </table>  
+    </div>
+</div>
