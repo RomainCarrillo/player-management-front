@@ -11,6 +11,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PositionsListComponentComponent } from './components/positions-list-component/positions-list-component.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
+import { OpponentListComponent } from './components/opponent-list/opponent-list.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { MatSliderModule } from '@angular/material/slider';
     PlayersListComponentComponent,
     PlayerFormComponentComponent,
     PositionsListComponentComponent,
+    OpponentListComponent,
   ],
   imports: [
     BrowserModule,
