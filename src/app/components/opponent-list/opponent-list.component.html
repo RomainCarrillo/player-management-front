@@ -1,0 +1,18 @@
+<div class="card my-5">
+    <div class="card-body">
+      <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Club Name</th>
+            <th scope="col">City Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let opponent of opponents">
+            <td>{{ opponent.clubName}}</td>
+            <td>{{opponent.city}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
