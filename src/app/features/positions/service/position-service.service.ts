@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Position } from '../../models/position/position';
+import { Position } from '../../../models/position/position';
 import { Observable } from 'rxjs';
 
 @Injectable({
