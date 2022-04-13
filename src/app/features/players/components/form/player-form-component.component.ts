@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Player } from 'src/app/models/player/player';
-import { PlayerServiceService } from 'src/app/services/player/player-service.service';
+import { PlayerServiceService } from 'src/app/features/players/service/player-service.service';
 import { FormsModule }   from '@angular/forms';
 
 

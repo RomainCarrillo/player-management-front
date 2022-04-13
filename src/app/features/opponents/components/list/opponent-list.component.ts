@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Opponent } from 'src/app/models/opponent/opponent';
-import { OpponentServiceService } from 'src/app/services/opponent/opponent-service.service';
+import { OpponentServiceService } from 'src/app/features/opponents/service/opponent-service.service';
 
 @Component({
   selector: 'app-opponent-list',

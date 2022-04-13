@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Player } from 'src/app/models/player/player';
 import { Position } from 'src/app/models/position/position';
-import { PlayerServiceService } from 'src/app/services/player/player-service.service';
-import { PositionServiceService } from 'src/app/services/position/position-service.service';
+import { PlayerServiceService } from 'src/app/features/players/service/player-service.service';
+import { PositionServiceService } from 'src/app/features/positions/service/position-service.service';
 
 @Component({
   selector: 'app-positions-list-component',
