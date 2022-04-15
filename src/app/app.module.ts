@@ -13,6 +13,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import { OpponentListComponent } from './features/opponents/components/list/opponent-list.component';
 import { OpponentFormComponent } from './features/opponents/components/form/opponent-form.component';
+import { LeftNavbarComponent } from './theme-elements/left-side-navbar/left-navbar/left-navbar.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule} from '@angular/material/icon';
+import { MatDividerModule } from '@angular/material/divider';
+
+//https://www.youtube.com/watch?v=4CYuOiRHHA8
 
 @NgModule({
   declarations: [
@@ -22,6 +30,7 @@ import { OpponentFormComponent } from './features/opponents/components/form/oppo
     PositionsListComponentComponent,
     OpponentListComponent,
     OpponentFormComponent,
+    LeftNavbarComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,7 +39,12 @@ import { OpponentFormComponent } from './features/opponents/components/form/oppo
     FormsModule,
     BrowserAnimationsModule,
     MatSliderModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatButtonModule,
+    MatIconModule,
+    MatDividerModule
   ],
   providers: [PlayerServiceService],
   bootstrap: [AppComponent]
