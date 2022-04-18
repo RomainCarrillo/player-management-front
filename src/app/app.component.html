@@ -1,15 +1,18 @@
 <mat-toolbar>
-  my tool bar
+  <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+    <mat-icon *ngIf="!sidenav.opened">menu</mat-icon>
+    <mat-icon *ngIf="sidenav.opened">close</mat-icon>
+  </button>
+  <h1>{{ title }}</h1>
 </mat-toolbar>
 
 <mat-sidenav-container>
-  <mat-sidenav mode="side" opened>
+  <mat-sidenav #sidenav="matSidenav">
     <app-left-navbar></app-left-navbar>
   </mat-sidenav>
   <mat-sidenav-content>
     <div class="content mat-elevation-z4">
-      <h2>{{ title }}</h2>
-      <router-outlet>Main content</router-outlet>
+      <router-outlet></router-outlet>
     </div>
   </mat-sidenav-content>
 </mat-sidenav-container>
