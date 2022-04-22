@@ -6,12 +6,14 @@
           <tr>
             <th scope="col">First Name</th>
             <th scope="col">Last Name</th>
+            <th scope="col">Profil Pic</th>
           </tr>
         </thead>
         <tbody>
           <tr *ngFor="let player of players">
-            <td>{{ player.firstName}}</td>
+            <td>{{player.firstName}}</td>
             <td>{{player.lastName}}</td>
+            <td><img src="{{player.playerPic}}" alt="{{player.firstName}}_{{player.lastName}}_profil_pics"/></td>
           </tr>
         </tbody>
       </table>

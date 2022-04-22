@@ -21,7 +21,10 @@ export class PlayerServiceService {
    }
 
    public addPlayer(playerToAdd : Player) {
+     
      return this.http.post<Player>(this.playersUrl, playerToAdd);
    }
+
+
 
 }

@@ -3,7 +3,7 @@ export class Player {
     firstName: string;
     lastName: string;
     birthDate: string;
-    photoUrl: string;
+    playerPic: any; //dbImage
 
     public constructor() {}
 }
